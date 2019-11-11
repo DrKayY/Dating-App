@@ -12,7 +12,7 @@ import { catchError } from 'rxjs/operators';
                         return throwError(error.statusText);
                     }
                     // if (error.status === 400) {
-                    //     return throwError('username and password required');
+                    //     return throwError(error);
                     // }
                     const applicationError = error.headers.get('Application-Error');
                     if (applicationError) {
