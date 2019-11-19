@@ -57,7 +57,7 @@
               </form>
             </tab>
             <tab heading="Edit Photo">
-              <p>Photos here</p>
+              <app-photo-editor [photos]="user.photos" (getMemberPhotoChange)="updateMainPhoto($event)"></app-photo-editor>
             </tab>
           </tabset>
         </div>
