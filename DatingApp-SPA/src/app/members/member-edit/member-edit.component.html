@@ -1,7 +1,7 @@
 <div class="container mt-4">
     <div class="row">
       <div class="col-sm-4">
-        <h4>{{user.knownAs}}'s Profile</h4>
+        <h4>My Profile</h4>
       </div>
       <div class="col-sm-8">
         <div *ngIf="editForm.dirty" class="alert alert-info">
@@ -12,7 +12,7 @@
     <div class="row">
       <div class="col-sm-4">
         <div class="card">
-          <img class="card-img-top img-thumbnail" src="{{user.photoUrl}}" alt="{{user.knownAs}}">
+          <img class="card-img-top img-thumbnail" src="{{photoUrl || '../../../../../assets/16.1 user.png.png'}}" alt="{{user.knownAs}}">
           <div class="card-body">
             <div>
               <strong>Location:</strong>
@@ -57,7 +57,8 @@
               </form>
             </tab>
             <tab heading="Edit Photo">
-              <app-photo-editor [photos]="user.photos" (getMemberPhotoChange)="updateMainPhoto($event)"></app-photo-editor>
+              <app-photo-editor [photos]="user.photos"
+              (getMemberPhotoChange)="updateMainPhoto($event)"></app-photo-editor>
             </tab>
           </tabset>
         </div>
