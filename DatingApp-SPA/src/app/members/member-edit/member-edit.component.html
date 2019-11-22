@@ -48,11 +48,13 @@
                   <h4>Interests</h4>
                   <textarea name="interests" rows="6" class="form-control" [(ngModel)]="user.interests"></textarea>
                   <h4>Location Details:</h4>
-                  <div class="form-inline">
+                  <div class="form-group">
                       <label for="city">City: &nbsp;</label>
-                      <input class="form-control" type="text" name="city" [(ngModel)]="user.city">
+                      <input class="form-control form-control-sm" type="text" name="city" [(ngModel)]="user.city">
                       <label for="country">Country: &nbsp;</label>
-                      <input class="form-control" type="text" name="country" [(ngModel)]="user.country">
+                      <input class="form-control form-control-sm" type="text" name="country" [(ngModel)]="user.country">
+                      <label for="knownAs">Known As: &nbsp;</label>
+                      <input class="form-control form-control-sm" type="text" name="knownAs" [(ngModel)]="user.knownAs">
                   </div>
               </form>
             </tab>
