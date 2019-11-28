@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { PhotoEditorComponent } from './Photo-editor.component';
+import { PhotoEditorComponent } from './photo-editor.component';
 
 describe('PhotoEditorComponent', () => {
   let component: PhotoEditorComponent;

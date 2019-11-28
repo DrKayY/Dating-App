@@ -18,7 +18,6 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { ErrorInterceptorProvider } from 'src/app/_services/error.interceptor';
 import { AlertifyService } from './_services/alertify.service';
-import { MemberListComponent } from './members/member-list/member-list.component';
 import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
 import { appRoutes } from './routes';
@@ -31,10 +30,11 @@ import { MemberListResolver } from './_resolvers/member-list.resolver';
 import { MemberEditComponent } from './members/member-edit/member-edit.component';
 import { MemberEditResolver } from './_resolvers/member-edit.resolver';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
-import { PhotoEditorComponent } from './members/Photo-editor/Photo-editor.component';
 import { ListsResolver } from './_resolvers/lists.resolver';
 import { MessagesResolver } from './_resolvers/messages.resolver';
 import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
+import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
+import { MemberListComponent } from './members/member-list/member-list.component';
 
 export class CustomHammerConfig extends HammerGestureConfig  {
    overrides = {
@@ -56,10 +56,10 @@ export function tokenGetter() {
       MemberListComponent,
       ListsComponent,
       MessagesComponent,
+      PhotoEditorComponent,
       MemberCardComponent,
       MemberDetailComponent,
       MemberEditComponent,
-      PhotoEditorComponent,
       MemberMessagesComponent,
       TimeAgoPipe
    ],
