@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DatingApp.API.Migrations
 {
-    public partial class mySqlInitial : Migration
+    public partial class mysqlinitial1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
