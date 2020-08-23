@@ -9,15 +9,14 @@ using datingapp.api.Data;
 namespace DatingApp.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20191128151949_mysqlinitial1")]
-    partial class mysqlinitial1
+    [Migration("20200823083929_initial migration 23 08 2020")]
+    partial class initialmigration23082020
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
-                .HasAnnotation("Relational:MaxIdentifierLength", 64);
+                .HasAnnotation("ProductVersion", "2.1.14-servicing-32113");
 
             modelBuilder.Entity("DatingApp.API.Models.Like", b =>
                 {

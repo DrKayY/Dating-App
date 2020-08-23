@@ -35,6 +35,7 @@ import { MessagesResolver } from './_resolvers/messages.resolver';
 import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 import { MemberListComponent } from './members/member-list/member-list.component';
+import { LearnMoreComponent } from './home/learn-more/learn-more.component';
 
 export class CustomHammerConfig extends HammerGestureConfig  {
    overrides = {
@@ -53,6 +54,7 @@ export function tokenGetter() {
       NavComponent,
       HomeComponent,
       RegisterComponent,
+      LearnMoreComponent,
       MemberListComponent,
       ListsComponent,
       MessagesComponent,
